@@ -5,7 +5,7 @@ Table of Contents
 
 1. [Whitespace](#whitespace)
   2. [Parens, Braces, Linebreaks](#parens-braces-linebreaks)
-  2. [Assignments, Declarations, Functions ( Named, Expression, Constructor )](#assignments-declarations-functions-named-expression-constructor-)
+  2. [Assignments, Declarations, Functions ( Named, Expression, Constructor )](#assignments-declarations-functions--named-expression-constructor-)
   2. [Naming](#naming)
   2. [Comments](#comments)
   2. [Example](example.js)
