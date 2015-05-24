@@ -328,7 +328,7 @@ see [example.js](example.js)
 
 Use jscs to make adhering to this style guide much easier
 
-## install jscs for Sublime Text 3
+## Install jscs for Sublime Text 3
 
 install `jscs` globally with `npm`
 
@@ -336,7 +336,7 @@ install `jscs` globally with `npm`
 npm install -g jscs
 ```
 
-## install SublimeLinter3 package
+## Install SublimeLinter3 package
 
 _if it's not already installed_
 
@@ -347,7 +347,7 @@ When the plugin list appears, type `sublimelinter`. Among the entries you should
 
 ![Install SublimeLinter3 Package with Package Control](http://i.imgur.com/4YKUejC.png)
 
-## install SublimeLinter-jscs package
+## Install SublimeLinter-jscs package
 
 Use Package Control again to install another package.
 
@@ -359,7 +359,7 @@ When the plugin list appears, type `jscs`. Among the entries you should see `Sub
 
 [Check the docs ](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable)
 
-## install Official DevLeague .jscsrc config
+## Install Official DevLeague .jscsrc config
 
 jscs will search for a `.jscsrc` file in the current working directory, if not found, will search in each parent directory until one is found.
 execute this command to install the official DevLeague `.jscsrc` file to be applied to all projects.
