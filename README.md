@@ -19,12 +19,12 @@ Table of Contents
 
 ## Whitespace
 
-Never mix spaces and tabs.
-Indent size is two spaces.
-Set editor to use spaces for tabs, and to "show invisibles".
-Enforces consistency
-Eliminating end of line whitespace
-Eliminating blank line whitespace
+- Never mix spaces and tabs.
+- Indent size is two spaces.
+- Set editor to use spaces for tabs, and to "show invisibles".
+- Enforces consistency
+- Eliminating end of line whitespace
+- Eliminating blank line whitespace
 
 
 ## Parens, Braces, Linebreaks
@@ -85,9 +85,9 @@ for ( prop in object ) {
 
 ## Assignments, Declarations, Functions ( Named, Expression, Constructor )
 
-each variable declaration uses the var keyword
-easier to read and refactor for learning purposes
-strings use 'single quotes'
+- each variable declaration uses the var keyword
+- easier to read and refactor for learning purposes
+- strings use 'single quotes'
 
 ```
 // inconsistent style
@@ -154,6 +154,7 @@ function foo() {
 ```
 
 Named Function Declarations do not have a space between the function name and parenthesis
+
 ```
 function square( number ) {
   return number * number;
@@ -164,8 +165,10 @@ function cube( number, callback ) {
 }
 ```
 
-invoking functions
-arguments have a space between each argument and the enclosing parenthesis
+Invoking functions
+
+Arguments have a space between each argument and the enclosing parenthesis
+
 ```
 square( 10 );
 
@@ -183,7 +186,9 @@ var square = function( number ) {
 ```
 
 Function Expression with Identifier
+
 This preferred form has the added value of being able to call itself and have an identity in stack traces
+
 ```
 var factorial = function factorial( number ) {
   if ( number < 2 ) {
@@ -202,7 +207,8 @@ function FooBar( options ) {
 }
 ```
 
-instantiating
+Instantiating
+
 ```
 var fooBar = new FooBar({ a: 'alpha' });
 ```
@@ -229,35 +235,41 @@ foo({
 ```
 
 Single argument string literal requires space
+
 ```
 foo( 'single literal string argument' );
 ```
 
-// Inner grouping parens require space
+Inner grouping parens require space
+
 ```
 if ( !( 'foo' in obj ) ) {
 
 }
 ```
 
-Type Checking
+**Type Checking**
 
-String: `typeof variable === "string"`
-Number: `typeof variable === "number"`
-Boolean: `typeof variable === "boolean"`
-Object: `typeof variable === "object"`
-Array:
+- **String**: `typeof variable === "string"`
+- **Number**: `typeof variable === "number"`
+- **Boolean**: `typeof variable === "boolean"`
+- **Object**: `typeof variable === "object"`
+
+**Array**:
+
 ```
 Array.isArray( arrayLikeObject )
 (wherever possible)
 ```
 
-Node: `elem.nodeType === 1`
-null: `variable === null`
-null or undefined: `variable == null`
-global undefined: `typeof variable === "undefined"`
-local undefined: `variable === undefined`
-Properties:
+- **Node**: `elem.nodeType === 1`
+- **null**: `variable === null`
+- **null or undefined**: `variable == null`
+- **global undefined**: `typeof variable === "undefined"`
+- **local undefined**: `variable === undefined`
+
+**Properties**:
+
 ```
 object.prop === undefined
 object.hasOwnProperty( prop )
@@ -266,9 +278,9 @@ object.hasOwnProperty( prop )
 
 ## Naming
 
-use full descriptive variable and function names
-never use a generic lowercase version of a data type
-`string`, `data`, `obj`, `object`, `ar`, `number` etc. are all *bad* names
+- use full descriptive variable and function names
+- never use a generic lowercase version of a data type
+- `string`, `data`, `obj`, `object`, `ar`, `number` etc. are all *bad* names
 
 ```
 // bad naming
@@ -280,11 +292,12 @@ ar.reduce(function(p,c,i,a){
 });
 ```
 
-`i` is an allowed short name for `index`
-`prev` is an allowed short name for `previous`
-`cur` is an allowed short name for `current`
-single values or objects should be singular `user`
-collections (arrays) should be plural `users`
+- `i` is an allowed short name for `index`
+- `prev` is an allowed short name for `previous`
+- `cur` is an allowed short name for `current`
+- single values or objects should be singular `user`
+- collections (arrays) should be plural `users`
+
 ```
 var userName = "lorem";
 var age;
@@ -296,15 +309,15 @@ books.reduce(function( prev, cur, i, books){
 });
 ```
 
-multiple word names for variables and functions should be camelCased `userName`, `powerGlove`
-multiple word names for a classes, interfaces, and enums should be PascalCased `VideoGame`, `SmartPhone`
-constants and const shoud be UPPER_SNAKE_CASED `FRAMES_PER_SECOND`, `API_VERSION`
+- multiple word names for variables and functions should be camelCased `userName`, `powerGlove`
+- multiple word names for a classes, interfaces, and enums should be PascalCased `VideoGame`, `SmartPhone`
+- constants and const shoud be UPPER_SNAKE_CASED `FRAMES_PER_SECOND`, `API_VERSION`
 
 ## Comments
 
-comments on code appear directly above the relevant code
-single and multiline comments are ok
-comments at the end of code lines are prohibited
+- comments on code appear directly above the relevant code
+- single and multiline comments are ok
+- comments at the end of code lines are prohibited
 
 ## Example
 
