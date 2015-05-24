@@ -19,12 +19,12 @@ Table of Contents
 
 ## Whitespace
 
-Never mix spaces and tabs.  
-Indent size is two spaces.  
+Never mix spaces and tabs.
+Indent size is two spaces.
 Set editor to use spaces for tabs, and to "show invisibles".
-Enforces consistency  
-Eliminating end of line whitespace  
-Eliminating blank line whitespace  
+Enforces consistency
+Eliminating end of line whitespace
+Eliminating blank line whitespace
 
 
 ## Parens, Braces, Linebreaks
@@ -42,9 +42,9 @@ while(condition) iterating++;
 for(var i=0;i<100;i++) someIterativeFn();
 ```
 
-use line breaks and whitespace  
+use line breaks and whitespace
 easier to read and refactor
-never use more than one line break  
+never use more than one line break
 
 ```
 if ( condition ) {
@@ -66,7 +66,7 @@ for ( var i = 0; i < 100; i++ ) {
 }
 ```
 
-_enhancement_ declare temporary variables outside of for loop  
+_enhancement_ declare temporary variables outside of for loop
 
 ```
 var i;
@@ -85,8 +85,8 @@ for ( prop in object ) {
 
 ## Assignments, Declarations, Functions ( Named, Expression, Constructor )
 
-each variable declaration uses the var keyword  
-easier to read and refactor for learning purposes  
+each variable declaration uses the var keyword
+easier to read and refactor for learning purposes
 strings use 'single quotes'
 
 ```
@@ -109,8 +109,8 @@ var array = [];
 var object = {};
 ```
 
-`var` (_and `const` and `let` for es6_) statements are declared in the beginning of their respective scope  
-reads closer to how JavaScript interprets the code and hoisting order  
+`var` (_and `const` and `let` for es6_) statements are declared in the beginning of their respective scope
+reads closer to how JavaScript interprets the code and hoisting order
 
 ```
 // bad style
@@ -164,7 +164,7 @@ function cube( number, callback ) {
 }
 ```
 
-invoking functions  
+invoking functions
 arguments have a space between each argument and the enclosing parenthesis
 ```
 square( 10 );
@@ -174,7 +174,7 @@ cube( 10, function( cubed ) {
 });
 ```
 
-Function Expression  
+Function Expression
 end with a semicolon
 ```
 var square = function( number ) {
@@ -182,7 +182,7 @@ var square = function( number ) {
 };
 ```
 
-Function Expression with Identifier  
+Function Expression with Identifier
 This preferred form has the added value of being able to call itself and have an identity in stack traces
 ```
 var factorial = function factorial( number ) {
@@ -194,7 +194,7 @@ var factorial = function factorial( number ) {
 };
 ```
 
-Constructor Declaration  
+Constructor Declaration
 Pascal cased
 ```
 function FooBar( options ) {
@@ -242,21 +242,21 @@ if ( !( 'foo' in obj ) ) {
 
 Type Checking
 
-String: `typeof variable === "string"`  
-Number: `typeof variable === "number"`  
-Boolean: `typeof variable === "boolean"`  
-Object: `typeof variable === "object"`  
+String: `typeof variable === "string"`
+Number: `typeof variable === "number"`
+Boolean: `typeof variable === "boolean"`
+Object: `typeof variable === "object"`
 Array:
 ```
 Array.isArray( arrayLikeObject )
 (wherever possible)
 ```
 
-Node: `elem.nodeType === 1`  
-null: `variable === null`  
-null or undefined: `variable == null`  
-global undefined: `typeof variable === "undefined"`  
-local undefined: `variable === undefined`  
+Node: `elem.nodeType === 1`
+null: `variable === null`
+null or undefined: `variable == null`
+global undefined: `typeof variable === "undefined"`
+local undefined: `variable === undefined`
 Properties:
 ```
 object.prop === undefined
@@ -266,8 +266,8 @@ object.hasOwnProperty( prop )
 
 ## Naming
 
-use full descriptive variable and function names  
-never use a generic lowercase version of a data type  
+use full descriptive variable and function names
+never use a generic lowercase version of a data type
 `string`, `data`, `obj`, `object`, `ar`, `number` etc. are all *bad* names
 
 ```
@@ -276,15 +276,15 @@ var str = "lorem";
 var num;
 function a( b, c ){}
 ar.reduce(function(p,c,i,a){
-  
+
 });
 ```
 
-`i` is an allowed short name for `index`  
-`prev` is an allowed short name for `previous`  
-`cur` is an allowed short name for `current`  
-single values or objects should be singular `user`  
-collections (arrays) should be plural `users`  
+`i` is an allowed short name for `index`
+`prev` is an allowed short name for `previous`
+`cur` is an allowed short name for `current`
+single values or objects should be singular `user`
+collections (arrays) should be plural `users`
 ```
 var userName = "lorem";
 var age;
@@ -292,18 +292,18 @@ function add( base, increment ){
   return base + increment;
 }
 books.reduce(function( prev, cur, i, books){
-  
+
 });
 ```
 
-multiple word names for variables and functions should be camelCased `userName`, `powerGlove`  
-multiple word names for a classes, interfaces, and enums should be PascalCased `VideoGame`, `SmartPhone`  
-constants and const shoud be UPPER_SNAKE_CASED `FRAMES_PER_SECOND`, `API_VERSION`  
+multiple word names for variables and functions should be camelCased `userName`, `powerGlove`
+multiple word names for a classes, interfaces, and enums should be PascalCased `VideoGame`, `SmartPhone`
+constants and const shoud be UPPER_SNAKE_CASED `FRAMES_PER_SECOND`, `API_VERSION`
 
 ## Comments
 
-comments on code appear directly above the relevant code  
-single and multiline comments are ok  
+comments on code appear directly above the relevant code
+single and multiline comments are ok
 comments at the end of code lines are prohibited
 
 ## Example
@@ -312,11 +312,11 @@ see [example.js](example.js)
 
 # JSCS
 
-Use jscs to make adhering to this style guide much easier  
+Use jscs to make adhering to this style guide much easier
 
 ## install jscs for Sublime Text 3
 
-install `jscs` globally with `npm`  
+install `jscs` globally with `npm`
 
 ```
 npm install -g jscs
@@ -324,7 +324,7 @@ npm install -g jscs
 
 ## install SublimeLinter3 package
 
-_if it's not already installed_  
+_if it's not already installed_
 
 #### using Package Control
 Within Sublime Text, bring up the Command Palette and type `install`. Among the commands you should see `Package Control: Install Package`. If that command is not highlighted, use the keyboard or mouse to select it. There will be a pause of a few seconds while Package Control fetches the list of available plugins.
@@ -347,12 +347,11 @@ When the plugin list appears, type `jscs`. Among the entries you should see `Sub
 
 ## install Official DevLeague .jscsrc config
 
-jscs will search for a `.jscsrc` file in the current working directory, if not found, will search in each parent directory until one is found.  
+jscs will search for a `.jscsrc` file in the current working directory, if not found, will search in each parent directory until one is found.
 execute this command to install the official DevLeague `.jscsrc` file to be applied to all projects.
 
-```
-curl -L https://raw.github.com/DevLeague/JS-Syle-Guide/master/.jscsrc -o ~/
-```
+    curl -L https://raw.github.com/DevLeague/JS-Syle-Guide/master/.jscsrc -o ~/.jscsrc
+
 _this command also works to update the code style config_
 
 the code styleguide can be overridden on a per project basis by including a `.jscsrc` file in the project root directory.
