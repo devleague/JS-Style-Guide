@@ -179,6 +179,7 @@ cube( 10, function( cubed ) {
 
 Function Expression
 end with a semicolon
+
 ```
 var square = function( number ) {
   return number * number;
