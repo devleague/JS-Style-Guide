@@ -211,7 +211,7 @@ function FooBar( options ) {
 Instantiating
 
 ```
-var fooBar = new FooBar({ a: 'alpha' });
+var fooBar = new FooBar({ a : 'alpha' });
 ```
 
 Functions with callbacks
@@ -227,11 +227,11 @@ Function accepting an array, no space
 foo([ 'alpha', 'beta' ]);
 ```
 
-Function accepting an object, no space
+Function accepting an object
 ```
 foo({
-  a: 'alpha',
-  b: 'beta'
+  a : 'alpha',
+  b : 'beta'
 });
 ```
 

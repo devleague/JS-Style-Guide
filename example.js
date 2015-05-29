@@ -84,7 +84,7 @@ function FooBar( options ) {
   this.options = options;
 }
 
-var fooBar = new FooBar({ a: 'alpha' });
+var fooBar = new FooBar({ a : 'alpha' });
 
 var a = fooBar.options;
 
@@ -95,8 +95,8 @@ foo(function() {
 foo([ 'alpha', 'beta' ]);
 
 foo({
-  a: 'alpha',
-  b: 'beta'
+  a : 'alpha',
+  b : 'beta'
 });
 
 foo( 'single literal string argument' );
@@ -127,7 +127,7 @@ var foo = "",
   bar = "",
   qux;
 
-var // Comment on these
+var
   foo = "",
   bar = "",
   qux;
