@@ -1,4 +1,6 @@
 // --------- Follows Styleguide ---------
+var condition = true;
+var object = {};
 
 if ( condition ) {
   // statements
@@ -54,7 +56,6 @@ function foo() {
   let bar;
   if ( condition ) {
     let baz = '';
-    // statements
   }
 }
 
@@ -101,7 +102,7 @@ foo({
 
 foo( 'single literal string argument' );
 
-if ( !( 'foo' in obj ) ) {
+if ( !( 'foo' in object ) ) {
   // statements
 }
 
