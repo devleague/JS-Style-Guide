@@ -1,0 +1,24 @@
+{
+  "name": "eslint-config-devleague",
+  "version": "1.0.0",
+  "description": "DevLeague's ESLint config for students",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devleague/JS-Style-Guide.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "devleague"
+  ],
+  "author": "Ray Farias <rayrfarias@gmail.com> (http://github.com/sgnl)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devleague/JS-Style-Guide/issues"
+  },
+  "homepage": "https://github.com/devleague/JS-Style-Guide#readme"
+}
